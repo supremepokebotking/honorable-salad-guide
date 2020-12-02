@@ -5,7 +5,7 @@ Try out the World's Strongest Pokemon Ai.
 
 the docker compose has two containers in it. You can get an idea of what's inside by looking at these repos.
 Keep in mind the Video capture repo is incomplete since the container has secret optimizations.
-Honorable Salad Ai Tensorflow:  https://github.com/supremepokebotking/public-honorable-salad-tensorflow
+Honorable Salad Ai Tensorflow:  https://github.com/supremepokebotking/public-honorable-salad-ai-tensorflow
 Video Capture Container Sample Structure:  https://github.com/supremepokebotking/public-sword-capture
 
 Current Discord link. https://discord.gg/wx6tnUPRWx
