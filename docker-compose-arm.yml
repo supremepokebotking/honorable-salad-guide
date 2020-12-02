@@ -1,0 +1,21 @@
+version: '3.0'
+
+services:
+    sword-capture:
+      image: supremepokebotking/public-sword-capture-arm64:latest
+      volumes:
+          - "/dev/:/dev/"
+          - "./configs/:/app/configs"
+      privileged: true
+      working_dir: /app
+      environment:
+          - SERVER_URL=https://www.genericterraformtesterurl.com
+          - MODEL_SERVER_URL=http://localhost:9897
+      command: "runner.py -i configs/rpi_config.json"
+      depends_on:
+        - sword-model
+
+    sword-model:
+      image: supremepokebotking/public-honorable-salad-tensorflow-arm64:latest
+      environment:
+          - FLASK_PORT=9897
